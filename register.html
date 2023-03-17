@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <!-- head :: start -->
+    <head>
+        <title>Register Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="./assets/logo.png">
+        <link rel="stylesheet" href="./css/register.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+
+    </head>
+    <!-- head :: end -->
+
+    <!-- body :: start -->
+    <body>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 col-md-3 col-sm-2"></div>
+                <div class="col-lg-4 col-md-6 col-sm-8 col-xs-12">
+                    <!-- registeration form :: start -->
+                    <form class="form-container" id="register-form" action="php/register.php" method="POST" >
+
+                        <div class="form-group">
+                            <h3 class="form-heading">Register</h3>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="username">Username: </label>
+                            <input type="text" class="form-control" id="username" name="username" placeholder="Enter Username" value="" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Password: </label>
+                            <input type="password" class="form-control" id="password" name="password" placeholder="Enter Password" value="" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email: </label>
+                            <input type="text" class="form-control" id="email" placeholder="Enter Email Address" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phoneNumber">Phone Number: </label>
+                            <input type="text" class="form-control" id="phoneNumber" placeholder="Enter Phone Number" required>
+                        </div> 
+                        
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-success btn-block" id="register-btn" onclick="storeData()">Register</button>
+                        </div>                      
+
+                        <div class="form-group">
+                            <a class="link" href="./login.html">Already Register User? Log In</a>
+                        </div>
+
+                    </form>
+                    <!-- registeration form :: end -->
+                </div>
+            </div>
+        </div>
+        <script src="./js/register.js"></script>
+    </body>
+    <!-- body :: end -->
+</html>
